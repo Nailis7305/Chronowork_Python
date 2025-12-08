@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.routes.export_router import router as export_router
-from app.routers import clientes_router
+from app.routes import clientes_router
 
 app = FastAPI()
 
