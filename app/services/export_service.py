@@ -1,11 +1,14 @@
 import csv
+import os
 from app.database import db
 
 def generar_csv_clientes():
     coleccion = db["clientes"]
     datos = list(coleccion.find({}, {"_id": 0}))
 
-    file_path = "clientes_export.csv"
+    # Ruta segura en Render
+    file_path = "/tmp/clientes_export.csv"
+
     header = datos[0].keys() if datos else []
 
     with open(file_path, "w", newline="", encoding="utf-8") as f:
@@ -14,3 +17,4 @@ def generar_csv_clientes():
         writer.writerows(datos)
 
     return file_path
+
