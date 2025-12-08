@@ -1,0 +1,39 @@
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Archivos de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Archivos de logs
+*.log
+
+# Configuración del entorno
+*.env
+.env.*
+
+# Directorios de caché internos
+.cache/
+dist/
+build/
+
+# Archivos de editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo (Windows)
+Thumbs.db
+Desktop.ini
+
+# Sistema operativo (macOS)
+.DS_Store
+
+# Render build files
+.render-build/
