@@ -8,6 +8,9 @@ app = FastAPI()
 def root():
     return {"message": "Python CSV Service running"}
 
-app.include_router(export_router, prefix="/api/clientes", tags=["Clientes"])
+# Rutas de exportación
+app.include_router(export_router, prefix="/api/export", tags=["Exportación"])
+
+# Rutas de clientes
 app.include_router(clientes_router, prefix="/api/clientes", tags=["Clientes"])
 
