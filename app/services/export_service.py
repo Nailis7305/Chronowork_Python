@@ -17,3 +17,4 @@ def generar_csv_clientes():
         writer.writerows(datos)
 
     return file_path
+
