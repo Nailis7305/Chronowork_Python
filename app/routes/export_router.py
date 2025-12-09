@@ -12,3 +12,4 @@ async def exportar_clientes():
         media_type="text/csv",
         filename="clientes.csv"
     )
+
